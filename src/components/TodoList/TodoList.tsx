@@ -7,7 +7,7 @@ import { Status } from '../../types/Status';
 export const TodoList: React.FC = () => {
   const todos = useAppSelector(state => {
     const { todos } = state;
-    const { query, status } = state.filer;
+    const { query, status } = state.filter;
 
     return todos.filter(todo => {
       const matchesField =

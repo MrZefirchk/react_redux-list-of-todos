@@ -5,7 +5,7 @@ import todosReducer from '../features/todos';
 
 const rootReducer = combineSlices({
   currentTodo: currentTodoReducer,
-  filer: filterReducer,
+  filter: filterReducer,
   todos: todosReducer,
 });
 
